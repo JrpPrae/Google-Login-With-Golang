@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Homepage</title>
+</head>
+<body>
+    {{if .IsSuccess}}
+        <h1>Welcome, {{.Fullname}}!!</h1>
+        <p>Your login was successful and data is saved.</p>
+    {{else}}
+        <h1 style="color: red;">{{.ErrorMessage}}</h1>
+        <a href="/">Go back to Login</a>
+    {{end}}
+</body>
+</html>
